@@ -11,41 +11,33 @@ struct List {
     struct Node *tail;
 };
 
-void AddToBeginning(struct List &Lista, int NewValue) {
+void AddToBeginning(struct List *Lista, int NewValue) {
     struct Node NewNode;
     NewNode.valor = NewValue;
 
-    if (Lista.head == NULL) {
+    if (Lista->head == NULL) {
         NewNode.next = NULL;
         NewNode.prev = NULL;
-        Lista.head = &NewNode;
+        Lista->head = &NewNode;
+        Lista->tail = &NewNode;
     } else {
-        NewNode.next = Lista.head;
+        NewNode.next = Lista->head;
         NewNode.prev = NULL;
-        Lista.head = &NewNode;
+        Lista->head = &NewNode;
     }
-
 };
 
 //void AddToEnd(struct List Lista, int NewValue) {
-
-
 //};
 
-void Print(struct List Lista) {
-    struct Node *NewNode;
-    NewNode = Lista.head;
-    do {
-
-
-        printf("%d", NewNode->valor);
-        NewNode = NewNode->next;
-
-    } while (NewNode-> next != NULL);
-
-
- 
-};
+//void Print(struct List Lista) {
+//    struct Node *NewNode;
+//    NewNode = Lista.head;
+//    do {
+//        printf("%d", NewNode->valor);
+//        NewNode = NewNode->next;
+//    } while (NewNode-> next != NULL);
+//};
 //
 //int Find(struct List Lista, int Value) {
 //
@@ -57,8 +49,9 @@ void Print(struct List Lista) {
 
 
 int main() {
-    struct List* Lista;
-    AddToBeginning(Lista,10);
+  struct List Lista;
+
+  AddToBeginning(&Lista,10);
 
 
 }
