@@ -43,22 +43,32 @@ void AddToEnd(struct List *Lista, int NewValue) {
     }
 };
 
-//void Print(struct List Lista) {
-//    struct Node *NewNode;
-//    NewNode = Lista.head;
-//    do {
-//        printf("%d", NewNode->valor);
-//        NewNode = NewNode->next;
-//    } while (NewNode-> next != NULL);
-//};
-//
-//int Find(struct List Lista, int Value) {
-//
-//};
-//
-//void Erase(struct List Lista, int Value) {
-//
-//};
+void Print(struct List *Lista) {
+    struct Node *NewNode;
+    NewNode = Lista.head;
+    do {
+        printf("%d", NewNode->valor);
+        NewNode = NewNode->next;
+    } while (NewNode-> next != NULL);
+};
+
+//int Find(struct List *Lista, int Value) {
+
+};
+
+void Erase(struct List *Lista, int Value) {
+        int valor = 0;
+        for(auto iter = AddToBeginning(); iter != AddToEnd(); ++iter){
+            valor = iter ->dato;
+            if(valor <= prev){
+                iter = NewNode.Erase(iter);
+            }
+            if(valor >= next){
+                iter = NewNode.Erase(iter);
+            }
+        }
+
+};
 
 
 int main() {
