@@ -1,3 +1,0 @@
-/home/sergio/CLionProjects/ListaEnlazada/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sergio/CLionProjects/ListaEnlazada/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sergio/CLionProjects/ListaEnlazada/cmake-build-debug/CMakeFiles/ListaEnlazada.dir
