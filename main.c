@@ -27,8 +27,21 @@ void AddToBeginning(struct List *Lista, int NewValue) {
     }
 };
 
-//void AddToEnd(struct List Lista, int NewValue) {
-//};
+void AddToEnd(struct List *Lista, int NewValue) {
+    struct Node NewNode;
+    NewNode.valor = NewValue;
+
+    if (Lista->head == NULL) {
+        NewNode.next = NULL;
+        NewNode.prev = NULL;
+        Lista->head = &NewNode;
+        Lista->tail = &NewNode;
+    } else {
+        NewNode.next = Lista->head;
+        NewNode.prev = NULL;
+        Lista->tail = &NewNode;
+    }
+};
 
 //void Print(struct List Lista) {
 //    struct Node *NewNode;
@@ -49,9 +62,9 @@ void AddToBeginning(struct List *Lista, int NewValue) {
 
 
 int main() {
-  struct List Lista;
+    struct List Lista;
 
-  AddToBeginning(&Lista,10);
+    AddToBeginning(&Lista,10);
 
 
 }
