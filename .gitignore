@@ -3,3 +3,4 @@ build/
 .idea/
 tags
 CMakeLists.txt
+.clang-format
