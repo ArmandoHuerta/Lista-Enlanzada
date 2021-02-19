@@ -1,3 +1,0 @@
-/home/marcos/Yeyo/ListaDoble/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/marcos/Yeyo/ListaDoble/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/marcos/Yeyo/ListaDoble/cmake-build-debug/CMakeFiles/ListaEnlazada.dir
